@@ -1,0 +1,139 @@
+{
+	"products": [
+		{
+			"name": "XPS 13 Laptop",
+			"basePrice": 1220.50,
+			"id": 1,
+			"weightKg": 1.23,
+			"category": "laptops",
+			"components": {
+				"processor": 1,
+				"lcd": 3,
+				"operatingSystem": 1
+			}
+		},
+		{
+			"name": "XPS 13 Plus Laptop",
+			"basePrice": 1222.50,
+			"id": 2,
+			"weightKg": 1.23,
+			"category": "laptops",
+			"components": {
+				"processor": 2,
+				"lcd": 1,
+				"operatingSystem": 1
+			}
+		},
+		{
+			"name": "XPS 15 Laptop",
+			"basePrice": 1320.50,
+			"id": 3,
+			"weightKg": 1.23,
+			"category": "laptops",
+			"components": {
+				"processor": 2,
+				"lcd": 2,
+				"operatingSystem": 1
+			}
+		},
+		{
+			"name": "XPS 19.3 Laptop",
+			"basePrice": 2320,
+			"id": 4,
+			"weightKg": 1.33,
+			"category": "laptops",
+			"components": {
+				"processor": 3,
+				"lcd": 3,
+				"operatingSystem": 1
+			}
+		},
+		{
+			"name": "XPS Desktop",
+			"basePrice": 2620,
+			"id": 4,
+			"weightKg": 1.33,
+			"category": "desktops",
+			"components": {
+				"processor": 2,
+				"graphicsCard": 1,
+				"operatingSystem": 2
+			}
+		},
+		{
+			"name": "Optiplex 3000TC",
+			"basePrice": 2120,
+			"id": 4,
+			"weightKg": 1.53,
+			"category": "desktops",
+			"components": {
+				"processor": 3,
+				"graphicsCard": 2,
+				"operatingSystem": 2
+			}
+		}
+	],
+	"processors": [
+		{
+			"id": 1,
+			"name": "12th Gen Intel Core. Up to 4.2Ghz",
+			"price": 20
+		},
+		{
+			"id": 2,
+			"name": "12th Gen Intel Core. Up to 4.7Ghz",
+			"price": 60
+		},
+		{
+			"id": 3,
+			"name": "13th Gen Intel Core. Up to 4.8Ghz",
+			"price": 180
+		},
+		{
+			"id": 4,
+			"name": "13th Gen Intel Core. Up to 4.9hz",
+			"price": 200
+		}
+	],
+	"lcds": [
+		{
+			"id": 1,
+			"name": "13.4 inch, FHD+ 1920x1200",
+			"price": 30
+		},
+		{
+			"id": 2,
+			"name": "13.4 inch, OLEDm FHD+ 1920x1200",
+			"price": 60
+		},
+		{
+			"id": 3,
+			"name": "13.4 inch, OLEDm FHD+ 3456x2160",
+			"price": 180
+		}
+	],
+	"operatingSystems": [
+		{
+			"id": 1,
+			"name": "Windows 11 Home",
+			"price": 40
+		},
+		{
+			"id": 2,
+			"name": "Windows 11 Pro",
+			"price": 90
+		}
+	],
+	"graphicsCards": [
+		{
+			"id": 1,
+			"name": "NVIDIA® GeForce RTX™ 3060 Ti",
+			"price": 200
+		},
+		{
+			"id": 2,
+			"name": "NVIDIA® GeForce® GTX 1650",
+			"price": 100
+		}
+	]
+}
