@@ -11,6 +11,7 @@ export default defineConfig({
             '@': fileURLToPath(new URL('./src', import.meta.url))
         }
     },
+    base: `/computer-order-form/`,
     build: {
       outDir: './docs'
     }
