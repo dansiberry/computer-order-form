@@ -4,7 +4,6 @@
 			"name": "XPS 13 Laptop",
 			"basePrice": 1220.50,
 			"id": 1,
-			"weightKg": 1.23,
 			"category": "laptops",
 			"components": {
 				"processor": 1,
@@ -16,7 +15,6 @@
 			"name": "XPS 13 Plus Laptop",
 			"basePrice": 1222.50,
 			"id": 2,
-			"weightKg": 1.23,
 			"category": "laptops",
 			"components": {
 				"processor": 2,
@@ -28,7 +26,6 @@
 			"name": "XPS 15 Laptop",
 			"basePrice": 1320.50,
 			"id": 3,
-			"weightKg": 1.23,
 			"category": "laptops",
 			"components": {
 				"processor": 2,
@@ -40,7 +37,6 @@
 			"name": "XPS 19.3 Laptop",
 			"basePrice": 2320,
 			"id": 4,
-			"weightKg": 1.33,
 			"category": "laptops",
 			"components": {
 				"processor": 3,
@@ -52,7 +48,6 @@
 			"name": "XPS Desktop",
 			"basePrice": 2620,
 			"id": 4,
-			"weightKg": 1.33,
 			"category": "desktops",
 			"components": {
 				"processor": 2,
@@ -64,7 +59,6 @@
 			"name": "Optiplex 3000TC",
 			"basePrice": 2120,
 			"id": 4,
-			"weightKg": 1.53,
 			"category": "desktops",
 			"components": {
 				"processor": 3,
