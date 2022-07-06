@@ -1,7 +1,9 @@
+/* Import Tailwind utility classes */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+/* Basic body stlyes */
 body {
     min-height: 100vh;
     line-height: 1.6;
@@ -9,9 +11,23 @@ body {
     font-size: 16px;
 }
 
+/* Container for max page width */
 .container {
     @apply mx-auto;
     max-width: 1112px;
     padding-left: 20px;
     padding-right: 20px;
+}
+
+/* Button styles that are reused throughout the site */
+.button {
+    @apply inline-block px-8 py-3 font-bold text-white bg-blue-500 rounded;
+}
+
+.button:hover {
+    @apply brightness-75;
+}
+
+.button--small {
+    @apply inline-block px-4 py-2 text-sm font-bold text-white bg-blue-500 rounded;
 }
