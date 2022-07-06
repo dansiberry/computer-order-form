@@ -86,10 +86,11 @@ export default {
                         class="mt-4 mb-1"
                         :key="type"
                     >
-                        <label class="block" for="processor">{{ type }}</label>
+                        <label class="block" for="processor">{{ componentNameMap[type] }}</label>
                         <!-- Allow for user to udpate each component by choosing from available alternatives -->
                         <select
                             class="block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding bg-no-repeat border border-solid border-gray-300 rounded"
+                            :name="type"
                             @change="updateComponent(product.cartId, type, $event.target.value)"
                         >
                             <!-- Loop through available components of given type using data -->

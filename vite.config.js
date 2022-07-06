@@ -11,8 +11,10 @@ export default defineConfig({
             '@': fileURLToPath(new URL('./src', import.meta.url))
         }
     },
+    // Add base path for hosting on GitHub pages repo
     base: `/computer-order-form/`,
     build: {
-      outDir: './docs'
+        // Set output dir for GitHub pages config
+        outDir: './docs'
     }
 });

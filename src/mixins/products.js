@@ -2,6 +2,14 @@ import data from './../data.json';
 
 // Utility methods for handling product data
 export default {
+    data: () => ({
+        // Map component types to formatted titles for UI
+        componentNameMap: {
+            lcd: 'LCD',
+            operatingSystem: 'Operating System',
+            processor: 'Processor'
+        }
+    }),
     methods: {
         // Return array of products populated with components and prices
         hydrateProducts(products) {

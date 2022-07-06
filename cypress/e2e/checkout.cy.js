@@ -19,6 +19,7 @@ describe('Checkout', () => {
     it('should display the correct cart total', async () => {
         let cartTotal = 0;
         let sumTotal = 0;
+
         cy.get('.cart-total')
             .then((el) => {
                 // Get cart total from UI
@@ -34,6 +35,30 @@ describe('Checkout', () => {
             .then(() => expect(cartTotal).to.equal(sumTotal));
     });
 
+    it('should update cart total when components are changed', () => {
+        let totalWindowsHome = 0;
+        let totalWindowsPro = 0;
+
+        // Get the total for when first product is has Windows Home
+        cy.get('.cart-card:first-child select[name="operatingSystem"]')
+            .select(0)
+            .then((e) => {
+                cy.get('.cart-total').then((el) => {
+                    totalWindowsHome = parseFloat(el[0].getAttribute('total'));
+                });
+            });
+        // Get the total for when first product is has Windows Pro
+        cy.get('.cart-card:first-child select[name="operatingSystem"]')
+            .select(1)
+            .then((e) => {
+                cy.get('.cart-total').then((el) => {
+                    totalWindowsPro = parseFloat(el[0].getAttribute('total'));
+                });
+            })
+            // Verify that cart total has updated
+            .then(() => expect(totalWindowsHome).not.to.equal(totalWindowsPro));
+    });
+
     it('should submit form with correct data and redirect to thank you page', () => {
         // Fill out the form fields
         cy.get('#name').type('Tom Gray');
@@ -43,6 +68,6 @@ describe('Checkout', () => {
         cy.get('#country').type('Germany');
         // Submit and test that redirected to thank-you
         cy.get('form button').click();
-        cy.location('pathname').should('eq', '/thank-you')
+        cy.location('pathname').should('contain', '/thank-you');
     });
 });
