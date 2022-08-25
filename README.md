@@ -1,1 +1,1 @@
-# order-form mini app . See package json from build scripts 
+# order-form mini app . See package json for build scripts 
