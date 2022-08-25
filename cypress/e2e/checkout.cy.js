@@ -39,7 +39,7 @@ describe('Checkout', () => {
         let totalWindowsHome = 0;
         let totalWindowsPro = 0;
 
-        // Get the total for when first product is has Windows Home
+        // Get the total for when first product has Windows Home
         cy.get('.cart-card:first-child select[name="operatingSystem"]')
             .select(0)
             .then((e) => {
@@ -47,7 +47,7 @@ describe('Checkout', () => {
                     totalWindowsHome = parseFloat(el[0].getAttribute('total'));
                 });
             });
-        // Get the total for when first product is has Windows Pro
+        // Get the total for when first product has Windows Pro
         cy.get('.cart-card:first-child select[name="operatingSystem"]')
             .select(1)
             .then((e) => {
